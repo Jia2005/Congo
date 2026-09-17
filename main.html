@@ -333,12 +333,10 @@
         .polaroid-img {
             width: 100%;
             height: 100px;
-            background: var(--blush-pink);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
+            object-fit: cover;
+            display: block;
             border-radius: 2px;
+            background: var(--blush-pink);
         }
 
         /* Hype Jar */
@@ -470,7 +468,7 @@
     <!-- Music Control Button -->
     <div class="music-toggle" id="musicBtn" onclick="toggleMusic()" title="Toggle ambient music">🎵</div>
     <audio id="bgMusic" loop>
-        <source src="https://assets.mixkit.co/music/preview/mixkit-gentle-dreams-459.mp3" type="audio/mp3">
+        <source src="audio.mp3" type="audio/mp3">
     </audio>
 
     <div class="container">
@@ -624,12 +622,20 @@
             
             <div class="polaroid-container">
                 <div class="polaroid">
-                    <div class="polaroid-img">👩‍💻</div>
-                    <p class="handwritten" style="font-size: 0.9rem; margin-top: 5px;">you being focused</p>
+                    <img
+                        class="polaroid-img"
+                        src="image.jpg"
+                        alt="My hot baby"
+                    >
+                    <p class="handwritten" style="font-size: 0.9rem; margin-top: 5px;">My hot baby 🌸</p>
                 </div>
                 <div class="polaroid">
-                    <div class="polaroid-img">☕</div>
-                    <p class="handwritten" style="font-size: 0.9rem; margin-top: 5px;">us surviving</p>
+                    <img
+                        class="polaroid-img"
+                        src="image2.jpg"
+                        alt="Us together"
+                    >
+                    <p class="handwritten" style="font-size: 0.9rem; margin-top: 5px;">us together 💖💖</p>
                 </div>
             </div>
 
